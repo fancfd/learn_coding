@@ -34,9 +34,9 @@ def get(aMap, key, default = None):
     i, k, v = get_slot(aMap, key, default = default)
     return v
 
-def set(sMap, key, value):
+def set(aMap, key, value):
     """Sets the key the the value, replaceing any existing value."""
-    bucket = get_ubcket(aMap, key)
+    bucket = get_bucket(aMap, key)
     i, k, v = get_slot(aMap, key)
 
     if i >= 0:
